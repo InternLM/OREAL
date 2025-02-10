@@ -3,7 +3,7 @@
 
 [![license](https://img.shields.io/github/license/InternLM/opencompass.svg)](./LICENSE)
 [![arXiv](https://img.shields.io/badge/arXiv-2405.20315-b31b1b.svg)](https://arxiv.org/abs/2405.20315)
-[![huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DeepSeek%20AI-ffc107?color=ffc107&logoColor=white)](https://huggingface.co/internlm/OREAL-32B)
+[![huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-OREAL-ffc107?color=ffc107&logoColor=white)](https://huggingface.co/internlm/OREAL-32B)
 
 
 ## ✨ Introduction
