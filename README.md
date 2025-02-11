@@ -2,7 +2,7 @@
 
 
 [![license](https://img.shields.io/github/license/InternLM/opencompass.svg)](./LICENSE)
-[![arXiv](https://img.shields.io/badge/arXiv-2405.20315-b31b1b.svg)](https://arxiv.org/abs/2405.20315)
+[![arXiv](https://img.shields.io/badge/arXiv-2502.06781-b31b1b.svg)](https://arxiv.org/abs/2502.06781)
 [![huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-OREAL-ffc107?color=ffc107&logoColor=white)](https://huggingface.co/internlm/OREAL-32B)
 
 
@@ -49,7 +49,15 @@ We also release the models of SFT version. You can construct your own RL pipelin
 ## 🖊️ Citation
 
 ```
-
+@misc{lyu2025exploringlimitoutcomereward,
+      title={Exploring the Limit of Outcome Reward for Learning Mathematical Reasoning}, 
+      author={Chengqi Lyu and Songyang Gao and Yuzhe Gu and Wenwei Zhang and Jianfei Gao and Kuikun Liu and Ziyi Wang and Shuaibin Li and Qian Zhao and Haian Huang and Weihan Cao and Jiangning Liu and Hongwei Liu and Junnan Liu and Songyang Zhang and Dahua Lin and Kai Chen},
+      year={2025},
+      eprint={2502.06781},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2502.06781}, 
+}
 ```
 
 ## 💳 License
