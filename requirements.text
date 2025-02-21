@@ -1,0 +1,3 @@
+fire
+torch>=2.5.0
+xtuner@git+https://github.com/InternLM/xtuner.git
