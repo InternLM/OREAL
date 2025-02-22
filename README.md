@@ -47,11 +47,15 @@ We also release the models of SFT version. You can construct your own RL pipelin
 | OREAL-32B-SFT  | [Model Link](https://huggingface.co/internlm/OREAL-32B-SFT)  |
 
 
-## Training Tutorial
+## 🚄 Training Tutorial
 
 ### 1. Install Dependencies
 
+OREAL utilizes [XTuner](https://github.com/InternLM/xtuner/tree/main) as the training engine. 
+
 ```bash
+pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
+pip install flash-attn --no-build-isolation
 pip install -r requirements.txt
 ```
 

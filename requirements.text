@@ -1,3 +1,4 @@
 fire
+flash-attn
 torch>=2.5.0
-xtuner@git+https://github.com/InternLM/xtuner.git
+xtuner[all]==0.2.0rc0
