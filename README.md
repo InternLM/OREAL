@@ -3,7 +3,7 @@
 
 [![license](https://img.shields.io/github/license/InternLM/opencompass.svg)](./LICENSE)
 [![arXiv](https://img.shields.io/badge/arXiv-2502.06781-b31b1b.svg)](https://arxiv.org/abs/2502.06781)
-[![huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-OREAL-ffc107?color=ffc107&logoColor=white)](https://huggingface.co/internlm/OREAL-32B)
+[![huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-OREAL-ffc107?color=ffc107&logoColor=white)](https://huggingface.co/collections/internlm/oreal-67aaccf5a8192c1ba3cff018)
 
 
 ## ✨ Introduction
@@ -30,12 +30,15 @@ With OREAL, for the first time, a 7B model can obtain 94.0 pass@1 accuracy on MA
 
 ![main_table](./figures/main_table.png)
 
-## 🤗 HuggingFace Model Zoo
+## 🤗 HuggingFace
+
+### Model
 
 Our OREAL models are available on Hugging Face 🤗:
 
 | Model    | Huggingface Repo |
 |----------|------------------|
+| OREAL-DeepSeek-R1-Distill-Qwen-7B  | [Model Link](https://huggingface.co/internlm/OREAL-DeepSeek-R1-Distill-Qwen-7B) |
 | OREAL-7B  | [Model Link](https://huggingface.co/internlm/OREAL-7B)  |
 | OREAL-32B  | [Model Link](https://huggingface.co/internlm/OREAL-32B)  |
 
@@ -46,6 +49,13 @@ We also release the models of SFT version. You can construct your own RL pipelin
 | OREAL-7B-SFT  | [Model Link](https://huggingface.co/internlm/OREAL-7B-SFT)  |
 | OREAL-32B-SFT  | [Model Link](https://huggingface.co/internlm/OREAL-32B-SFT)  |
 
+### Data
+
+We release the prompts utilzed in our RL training phase.
+
+| Dataset    | Huggingface Repo |
+|----------|------------------|
+| RL Prompts  | [Model Link](https://huggingface.co/datasets/internlm/OREAL-RL-Prompts)  |
 
 ## 🚄 Training Tutorial
 
@@ -117,14 +127,11 @@ More detailed training settings can be found in the [oreal/configs](./oreal/conf
 ## 🖊️ Citation
 
 ```
-@misc{lyu2025exploringlimitoutcomereward,
-      title={Exploring the Limit of Outcome Reward for Learning Mathematical Reasoning},
-      author={Chengqi Lyu and Songyang Gao and Yuzhe Gu and Wenwei Zhang and Jianfei Gao and Kuikun Liu and Ziyi Wang and Shuaibin Li and Qian Zhao and Haian Huang and Weihan Cao and Jiangning Liu and Hongwei Liu and Junnan Liu and Songyang Zhang and Dahua Lin and Kai Chen},
-      year={2025},
-      eprint={2502.06781},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2502.06781},
+@article{lyu2025exploring,
+  title={Exploring the Limit of Outcome Reward for Learning Mathematical Reasoning},
+  author={Lyu, Chengqi and Gao, Songyang and Gu, Yuzhe and Zhang, Wenwei and Gao, Jianfei and Liu, Kuikun and Wang, Ziyi and Li, Shuaibin and Zhao, Qian and Huang, Haian and others},
+  journal={arXiv preprint arXiv:2502.06781},
+  year={2025}
 }
 ```
 
