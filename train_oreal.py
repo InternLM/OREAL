@@ -828,14 +828,14 @@ def train_oreal(cfg_path, **kwargs):
                 kl_type = args.get("kl_type", "unbias")  # kl, unbias, mse
                 if kl_type == "kl":
                     kl = _ref_logprobs - _logprobs
-                    _kl_penalty_loss = (args.kl_coef * kl).sum() * actor_dp_size / global_negative_tokens
+                    _kl_penalty_loss = (args.kl_coef * kl).sum() * actor_dp_size / global_action_tokens
                 elif kl_type == "unbias":
                     kl = _ref_logprobs - _logprobs
                     nonneg_nobias_kl = torch.exp(kl) - kl - 1
-                    _kl_penalty_loss = (args.kl_coef * nonneg_nobias_kl).sum() * actor_dp_size / global_negative_tokens
+                    _kl_penalty_loss = (args.kl_coef * nonneg_nobias_kl).sum() * actor_dp_size / global_action_tokens
                 elif kl_type == "mse":
                     _kl_penalty_loss = (
-                        (args.kl_coef * (_ref_logprobs - _logprobs).square() / 2).sum() * actor_dp_size / global_negative_tokens
+                        (args.kl_coef * (_ref_logprobs - _logprobs).square() / 2).sum() * actor_dp_size / global_action_tokens
                     )
                 _kl_penalty_losses.append(_kl_penalty_loss)
 
